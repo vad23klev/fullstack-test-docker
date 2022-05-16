@@ -32,7 +32,18 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+
 $routes->get('/', 'Home::index');
+
+// Показать основную страницу с комментариями
+$routes->get("comments", "CommentsController::show" , ['as' => 'comments']);
+
+// Добавить новый комментарий
+$routes->post("comments", "CommentsController::store", ['as' => 'comments.store']);
+
+// Удалить комментарий
+$routes->delete("comments/(:num)", "CommentsController::delete/$1");
 
 /*
  * --------------------------------------------------------------------
