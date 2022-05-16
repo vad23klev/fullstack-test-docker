@@ -7,6 +7,7 @@ class Home extends BaseController
 {
 	public function index()
 	{
+    // return redirect()->to('/comments');
 		return view('welcome_message');
 	}
 }

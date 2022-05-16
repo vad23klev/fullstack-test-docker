@@ -202,33 +202,14 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div class="col-12 col-lg-6">dsad</div>
+		<div class="col-12 col-lg-6">
+    </div>
 	</div>
 </div>
 
-<footer>
-	<div class="copyrights">
-
-		<p>&copy; <?= date('Y') ?> CodeIgniter Foundation. CodeIgniter is open source project released under the MIT
-			open source licence.</p>
-
-	</div>
-
-</footer>
-
-<!-- SCRIPTS -->
-
 <script>
-	function toggleMenu() {
-		var menuItems = document.getElementsByClassName('menu-item');
-		for (var i = 0; i < menuItems.length; i++) {
-			var menuItem = menuItems[i];
-			menuItem.classList.toggle("hidden");
-		}
-	}
+  window.location.replace("/comments");
 </script>
-
-<!-- -->
 
 </body>
 </html>
